@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Modal from './Modal'
-import validation from '../utils'
+import { validation } from '../utils'
 import './Login.css'
 
 function Login() {

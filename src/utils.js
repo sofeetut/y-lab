@@ -1,4 +1,4 @@
-const validation = (value, name) => {
+export function validation(value, name) {
   switch (name) {
     case 'username':
       let re =
@@ -27,5 +27,3 @@ const validation = (value, name) => {
       break
   }
 }
-
-export default validation
