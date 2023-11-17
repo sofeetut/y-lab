@@ -45,6 +45,12 @@ function Login() {
       : setIsValid(true)
   }
 
+  function handleBlurValid(e, name) {
+    Object.values(varification).filter((n) => n).length
+      ? setIsValid(false)
+      : setIsValid(true)
+  }
+
   function handleCloseModal() {
     setIsModal(false)
   }
@@ -55,6 +61,7 @@ function Login() {
       <form onSubmit={handleFromSubmit}>
         <input
           type='email'
+          onBlur={(e) => handleBlurValid(e, 'username')}
           value={data.username}
           onChange={(e) => handleInputChange(e, 'username')}
           placeholder='Enter email'
@@ -65,6 +72,7 @@ function Login() {
         <input
           type='password'
           value={data.password}
+          onBlur={(e) => handleBlurValid(e, 'password')}
           onChange={(e) => handleInputChange(e, 'password')}
           placeholder='Enter password'
         />
