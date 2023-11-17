@@ -1,0 +1,51 @@
+.login {
+    margin: auto;
+    max-width: 300px;
+    background-color: #eeeff1;
+    padding: 20px;
+  }
+
+  .login h1 {
+    color: #79878f;
+    padding: 20px 0;
+  }
+
+  .login_field-errors {
+      font-size: 10px;
+      display: block;
+      text-align: left;
+      margin-left: 25px;
+      color: red;
+      margin-top: -15px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 0;
+    margin: 20px;
+    cursor: pointer;
+    background-color: #3797d8;
+    color: #fff;
+  }
+  
+  .login_btn-disabled {
+    cursor: pointer;
+    background-color: #575c5f;
+
+  }
+  
+  form {
+    font-size: 30px;
+  }
+  
+  input {
+    margin: 15px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: block;
+  }
+  
